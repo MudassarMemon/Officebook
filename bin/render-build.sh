@@ -11,7 +11,5 @@ npm install
 npm run build
 cd ..
 
-# Compile Rails assets and run migrations
-bundle exec rake assets:precompile
-bundle exec rake assets:clean
+# Run database migrations
 bundle exec rake db:migrate
