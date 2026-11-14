@@ -4,6 +4,8 @@ Officebook is a full-stack application inspired by Facebook and themed around NB
 
 **Click to visit the site:** [Officebook](https://officebook-1.onrender.com/)
 
+Click **Demo User** on the login page to explore without signing up. The app runs on a free hosting tier, so the first load after a quiet period can take up to a minute.
+
 ### Technologies Used
 
 - **Backend:** Ruby on Rails, PostgreSQL, JBuilder
@@ -11,7 +13,7 @@ Officebook is a full-stack application inspired by Facebook and themed around NB
   - Incorporated advanced security measures, including BCrypt password encryption, backend validation, constraints, pre-authorizations, and CSRF authenticity tokens. Also implemented session-based authorization for persistent login status.
 - **Frontend:** React and Redux
   - Emphasis on DRY (Don't Repeat Yourself) principles, modularity, and reusability of code. Efficient state management achieved through Redux.
-- **Hosting:** Heroku and AWS
+- **Hosting:** Render (web service), Neon (PostgreSQL), and AWS S3 (image storage via Rails Active Storage)
 
 ### Feature highlights:
 
