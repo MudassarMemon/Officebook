@@ -46,7 +46,7 @@ if (
   sessionStorage.getItem("currentUser") === null ||
   sessionStorage.getItem("X-CSRF-Token") === null
 ) {
-  store.dispatch(sessionActions.restoreSession()).then(renderApplication);
+  store.dispatch(sessionActions.restoreSession()).finally(renderApplication);
 } else {
   renderApplication();
 }

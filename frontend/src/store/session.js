@@ -36,11 +36,25 @@ export const login =
   };
 
 export const restoreSession = () => async (dispatch) => {
-  const response = await csrfFetch("/api/session");
-  storeCSRFToken(response);
-  const data = await response.json();
-  storeCurrentUser(data.user);
-  dispatch(setCurrentUser(data.user));
+  let response;
+  let user = null;
+  try {
+    response = await csrfFetch("/api/session");
+    storeCSRFToken(response);
+    const data = await response.json();
+    user = data.user;
+  } catch (res) {
+    // e.g. 401 when no one is logged in: fall back to a logged-out state
+    if (res instanceof Response) {
+      response = res;
+      storeCSRFToken(res);
+      if (res.status !== 401) console.error("Session restore failed:", res.status);
+    } else {
+      console.error("Session restore failed:", res);
+    }
+  }
+  storeCurrentUser(user);
+  dispatch(setCurrentUser(user));
   return response;
 };
 
