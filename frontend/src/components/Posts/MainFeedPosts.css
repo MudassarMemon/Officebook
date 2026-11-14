@@ -205,22 +205,14 @@ img#userIcon  {
   }
  
   .edit-posts-icon{
-    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yH/r/vaAkJ-lmnYp.png);
-    background-position: 0px -357px;
-    background-size: auto;
     width: 20px;
     height: 20px;
-    background-repeat: no-repeat;
     display: inline-block;
   } 
 
   .delete-posts-icon{
-    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/BS4qBw3i0wj.png);
-    background-position: 0px -1049px;
-    background-size: auto;
     width: 20px;
     height: 20px;
-    background-repeat: no-repeat;
     display: inline-block;
   } 
 

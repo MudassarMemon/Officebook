@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import { ModalProvider } from "./context/Modal";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./index.css";
 import App from "./App";
 import configureStore from "./store";

@@ -71,7 +71,7 @@ function PostEditModal({
                   setShowEditModal(true);
                 }}
               >
-                <img src="https://img.icons8.com/?size=100&id=86373&format=png&color=000000" className="edit-posts-icon"/>
+                <i className="fa-solid fa-pen edit-posts-icon"></i>
                 <button>Edit Post</button>
               </div>
 
@@ -82,7 +82,7 @@ function PostEditModal({
                   setShowPostSettingsModal(false);
                 }}
               >
-                <img src="https://img.icons8.com/?size=100&id=43949&format=png&color=000000" className="delete-posts-icon" />
+                <i className="fa-solid fa-trash delete-posts-icon"></i>
                 <button>Delete Post</button>
               </div>
             </div>

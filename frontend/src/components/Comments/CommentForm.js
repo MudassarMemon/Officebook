@@ -28,7 +28,7 @@ function CommentForm({ authorId, postId }) {
         <i
           onClick={handleSubmit}
           id="submit-message"
-          className="fa-solid fa-paper-plane-top"
+          className="fa-solid fa-paper-plane"
         ></i>
       </form>
     </div>

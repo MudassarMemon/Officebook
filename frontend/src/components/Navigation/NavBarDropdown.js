@@ -14,7 +14,7 @@ function NavBarDropdown({ sessionUser, logout, onClose }) {
         </NavLink>
       </div>
       <div onClick={logout} className="logout-container">
-        <div className="logout-icon"><img src="https://img.icons8.com/?size=100&id=82792&format=png&color=000000" alt="logout" /></div>
+        <div className="logout-icon"><i className="fa-solid fa-right-from-bracket" aria-hidden="true"></i></div>
         <button>Log Out</button>
       </div>
     </div>

@@ -76,9 +76,9 @@ img#userLogo:hover {
   border: 2px solid rgba(128, 128, 128, 0.261);
 }
 
-.logout-icon img{
+.logout-icon i{
+  font-size: 20px;
   width: 25px;
-  height: 25px;
   margin-right: 10px;
 }
 

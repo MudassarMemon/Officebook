@@ -128,7 +128,7 @@ function PostComments({ users, postId, postAuthor, sessionUser }) {
                             setShowEditFormModal(true);
                           }}
                         > 
-                        <img src="https://img.icons8.com/?size=100&id=86373&format=png&color=000000" id="comments" className="edit-posts-icon"/>
+                        <i id="comments" className="fa-solid fa-pen edit-posts-icon"></i>
                           Edit
                         </button>
                       </div>
@@ -139,7 +139,7 @@ function PostComments({ users, postId, postAuthor, sessionUser }) {
                             handleDelete(comment.id);
                           }}
                         >
-                          <img src="https://img.icons8.com/?size=100&id=43949&format=png&color=000000" className="delete-comment-icon"/>
+                          <i className="fa-solid fa-trash delete-comment-icon"></i>
                           Delete
                         </button>
                       </div>

@@ -111,7 +111,7 @@ function PostLikes({ post, users, sessionUser }) {
           <button onClick={handleLike}>
             {post.likes.findIndex((like) => like.user_id === sessionUser.id) <
             0 ? (
-              <i id="thumbs-up" className="fa-light fa-thumbs-up"></i>
+              <i id="thumbs-up" className="fa-regular fa-thumbs-up"></i>
             ) : (
               <i
                 id="thumbs-up"
@@ -124,7 +124,7 @@ function PostLikes({ post, users, sessionUser }) {
         </div>
         <div className="comment-button-focus" onClick={focusCommentInput}>
           <button>
-            <i id="comment-icon" className="fa-light fa-comment"></i>Comment
+            <i id="comment-icon" className="fa-regular fa-comment"></i>Comment
           </button>
         </div>
       </div>
