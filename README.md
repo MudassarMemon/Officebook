@@ -1,8 +1,8 @@
-# [Officebook](https://officebook-3392aeaf91bd.herokuapp.com/) 
+# [Officebook](https://officebook-1.onrender.com/)
 
 Officebook is a full-stack application inspired by Facebook and themed around NBC's 'The Office'. It is designed to replicate the essential features of a social media platform, such as posting, commenting, liking, and friend functionalities, all with a hint of the humor and style of 'The Office'.
 
-**Click to visit the site:** [Officebook](https://officebook-3392aeaf91bd.herokuapp.com/)
+**Click to visit the site:** [Officebook](https://officebook-1.onrender.com/)
 
 ### Technologies Used
 
