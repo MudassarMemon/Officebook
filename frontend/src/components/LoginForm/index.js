@@ -32,7 +32,8 @@ function LoginForm() {
     );
   };
 
-  function demoLogin() {
+  function demoLogin(e) {
+    e.preventDefault();
     return dispatch(
       sessionActions.login({
         email: "demo@demo.com",
@@ -76,7 +77,7 @@ function LoginForm() {
           <input type="submit" value="Log In"></input>
 
 
-          <button className="demo" onClick={demoLogin}>Demo User</button>
+          <button type="button" className="demo" onClick={demoLogin}>Demo User</button>
 
         <div className="line"></div>
       </form>
