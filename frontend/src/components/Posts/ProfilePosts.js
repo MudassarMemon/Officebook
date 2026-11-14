@@ -96,7 +96,7 @@ function ProfilePosts({ user }) {
                   </Link>
                   {post.authorId !== user.id ? (
                     <>
-                      <div className="arrow-icon"></div>
+                      <i className="fa-solid fa-caret-right arrow-icon"></i>
                       <Link to={`/users/${user.id}`}>
                         {user.firstName} {user.lastName}
                       </Link>
@@ -119,7 +119,7 @@ function ProfilePosts({ user }) {
             </div>
             <div className="post-body">{post.body}</div>
             {post.photoUrl ? (
-              <img className="post-image" src={post.photoUrl}></img>
+              <img className="post-image" alt="Post attachment" src={post.photoUrl}></img>
             ) : (
               ""
             )}

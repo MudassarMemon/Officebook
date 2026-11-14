@@ -47,17 +47,12 @@ div.upload-cover-photo:active{
     transform: scale(.95);
 }
 
-div.cover-photo-icon{
-    background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/9LC04kMypcZ.png");
-    background-position: 0px -21px;
-    background-size: 21px 123px;
+.cover-photo-icon{
     width: 20px;
     height: 20px;
-    background-repeat: no-repeat;
     display: inline-block;
     margin-right: 20px;
     transform: scale(1.5);
-    filter: invert(1);
 }
 
 form.cover-form > input#cover {
@@ -147,16 +142,12 @@ form.cover-form > input#cover {
 }
 
 div.profile-photo-icon{
-    background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/9LC04kMypcZ.png");
-    background-position: 0px -21px;
-    background-size: 21px 123px;
     width: 20px;
     height: 20px;
-    background-repeat: no-repeat;
     display: inline-block;
     transform: scale(1.5);
-    filter: opacity(.5);
-    filter: invert(.2);
+    text-align: center;
+    color: #333;
 }
 
 

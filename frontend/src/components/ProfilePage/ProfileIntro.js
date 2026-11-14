@@ -24,10 +24,7 @@ function ProfileIntro({ user }) {
       <div className="profile-workplace-container">
         {user.workplace ? (
           <div>
-            <img
-              alt=""
-              src="https://static.xx.fbcdn.net/rsrc.php/v3/yX/r/s_ONRClAxbX.png"
-            />
+            <i className="fa-solid fa-briefcase" aria-hidden="true"></i>
             {"Works at " + user.workplace}
           </div>
         ) : null}
@@ -36,10 +33,7 @@ function ProfileIntro({ user }) {
       <div className="profile-school-container">
         {user.school ? (
           <div>
-            <img
-              alt=""
-              src="https://static.xx.fbcdn.net/rsrc.php/v3/yG/r/H804hWf2rBh.png"
-            />
+            <i className="fa-solid fa-graduation-cap" aria-hidden="true"></i>
             {"Studied at " + user.school}
           </div>
         ) : null}
@@ -48,10 +42,7 @@ function ProfileIntro({ user }) {
       <div className="profile-currentCity-container">
         {user.currentCity ? (
           <div>
-            <img
-              alt=""
-              src="https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/Yifeo6sHdtL.png"
-            />
+            <i className="fa-solid fa-house" aria-hidden="true"></i>
             {"Lives in " + user.currentCity}
           </div>
         ) : null}
@@ -59,10 +50,7 @@ function ProfileIntro({ user }) {
       <div className="profile-hometown-container">
         {user.hometown ? (
           <div>
-            <img
-              alt=""
-              src="https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/dkccKhK21Su.png"
-            />
+            <i className="fa-solid fa-location-dot" aria-hidden="true"></i>
             {"From " + user.hometown}
           </div>
         ) : null}
@@ -70,10 +58,7 @@ function ProfileIntro({ user }) {
       <div className="profile-pronunciation-container">
         {user.pronunciation ? (
           <div>
-            <img
-              alt=""
-              src="https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/_uvQyqmWMnV.png"
-            />
+            <i className="fa-solid fa-volume-high" aria-hidden="true"></i>
             {"Pronounces name " + user.pronunciation}
           </div>
         ) : null}
@@ -81,10 +66,7 @@ function ProfileIntro({ user }) {
       <div className="profile-createdAt-container">
         {user ? (
           <div>
-            <img
-              alt=""
-              src="https://static.xx.fbcdn.net/rsrc.php/v3/y-/r/DqqZwK6dixD.png"
-            />
+            <i className="fa-solid fa-clock" aria-hidden="true"></i>
             {"Joined " + formatDateShorter(user.createdAt)}
           </div>
         ) : null}

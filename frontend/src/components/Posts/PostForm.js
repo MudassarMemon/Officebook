@@ -60,12 +60,14 @@ function PostForm({ onClose, user, postId }) {
 
   return (
     <div className="create-post-form">
-      <img
+      <i
         onClick={onClose}
         id="close-create-post"
-        alt="close-create-post"
-        src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/zgulV2zGm8t.png"
-      />
+        className="fa-solid fa-xmark close-icon"
+        role="button"
+        tabIndex={0}
+        aria-label="Close"
+      ></i>
       <form onSubmit={handleSubmit}>
         <h1>{postId ? "Edit post" : "Create post"}</h1>
         {error ? <p className="empty-body">{error}</p> : ""}
@@ -88,12 +90,14 @@ function PostForm({ onClose, user, postId }) {
             {photoURL && (
               <>
                 <img alt="" src={photoURL} id="preview" />
-                <img
+                <i
                   onClick={handleRemovePhoto}
                   id="remove-post-image"
-                  alt=""
-                  src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/zgulV2zGm8t.png"
-                />
+                  className="fa-solid fa-xmark close-icon"
+                  role="button"
+                  tabIndex={0}
+                  aria-label="Remove image"
+                ></i>
               </>
             )}
             <div className="post-photo-button">

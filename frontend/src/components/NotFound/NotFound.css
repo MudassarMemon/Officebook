@@ -1,0 +1,34 @@
+div.not-found {
+  margin: 120px auto 0;
+  max-width: 500px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+  text-align: center;
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+div.not-found h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+div.not-found p {
+  color: #65676b;
+  margin-bottom: 20px;
+}
+
+div.not-found a {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: #1877f2;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+div.not-found a:hover {
+  background-color: #1b74e4;
+}

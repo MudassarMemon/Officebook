@@ -15,7 +15,7 @@
     position: relative;
 }
 
-img#close-friend-requests {
+i#close-friend-requests {
     border-radius: 50%;
     background-color: #f0f2f5;
     padding: 3px;
@@ -24,12 +24,12 @@ img#close-friend-requests {
     right: 10px;
 }
 
-img#close-friend-requests:hover {
+i#close-friend-requests:hover {
     background-color: #e4e6e8;
     cursor: pointer;
   }
 
-img#close-friend-requests:active {
+i#close-friend-requests:active {
     background-color: #d8d9dc;
     transform: scale(.9);
 }

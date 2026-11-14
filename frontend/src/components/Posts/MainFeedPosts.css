@@ -63,15 +63,11 @@ div.post-author p.created-at {
     margin: 0;
 }
 .arrow-icon{
-    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/iRdHi2-V_CL.png);
-    background-position: 0px -718px;
-    background-size: 26px 810px;
     width: 16px;
     height: 16px;
-    filter:opacity(.5);
-    background-repeat: no-repeat;
     display: inline-block;
-    color: #0090d8;
+    text-align: center;
+    color: #65676b;
   }
 
 li > div.edit-post-icon {

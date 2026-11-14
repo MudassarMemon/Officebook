@@ -28,7 +28,7 @@ function ProfileHeader({ id, user }) {
             <form className="cover-form">
               <input type="file" id="cover" onChange={(e) => handleUpload(e)} />
             </form>
-            <div className="cover-photo-icon"></div>
+            <i className="fa-solid fa-camera cover-photo-icon"></i>
             Upload Cover Photo
           </div>
         ) : (
@@ -42,6 +42,7 @@ function ProfileHeader({ id, user }) {
             {user && sessionUser && user.id === sessionUser.id ? (
               <div>
                 <div className="profile-photo-icon">
+                  <i className="fa-solid fa-camera"></i>
                   <form className="upload-form">
                     <input
                       type="file"

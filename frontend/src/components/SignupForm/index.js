@@ -19,12 +19,14 @@ function SignupFormModal() {
       </div>
       {showModal && (
         <Modal>
-          <img
+          <i
             onClick={() => setShowModal(false)}
             id="closeSignUpForm"
-            alt="closeSignUpForm"
-            src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/zgulV2zGm8t.png"
-          />
+            className="fa-solid fa-xmark close-icon"
+            role="button"
+            tabIndex={0}
+            aria-label="Close"
+          ></i>
           <SignupForm />
         </Modal>
       )}

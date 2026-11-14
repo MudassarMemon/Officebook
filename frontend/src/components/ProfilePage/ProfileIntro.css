@@ -26,10 +26,6 @@
     margin: 0px;
 }
 
-.profile-bio-container > div.edit-profile-container > .edit-icon {
-    display: none;
-}
-
 .intro-container > div > div {
     display: flex;
     justify-content: flex-start;
@@ -37,8 +33,10 @@
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
-.intro-container > div > div > img {
+.intro-container > div > div > i {
+    width: 20px;
+    text-align: center;
+    font-size: 16px;
     margin-right: 10px;
-    filter:opacity(.5);
-    transform:scale(.6)
+    color: #8c939d;
 }

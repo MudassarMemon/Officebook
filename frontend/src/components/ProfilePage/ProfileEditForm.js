@@ -42,12 +42,14 @@ function ProfileEditForm({ onClose, user }) {
 
   return (
     <div className="edit-user-form">
-      <img
+      <i
         onClick={onClose}
         id="closeEditUser"
-        alt="closeEditUser"
-        src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/zgulV2zGm8t.png"
-      />
+        className="fa-solid fa-xmark close-icon"
+        role="button"
+        tabIndex={0}
+        aria-label="Close"
+      ></i>
       <form className="edit-bio-form" onSubmit={handleSubmit}>
         <h1>Customize Your Intro</h1>
         <div>
@@ -61,11 +63,7 @@ function ProfileEditForm({ onClose, user }) {
           />
         </div>
         <div>
-          <img
-            id="bio-icons"
-            alt=""
-            src="https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/Yifeo6sHdtL.png"
-          />
+          <i id="bio-icons" className="fa-solid fa-house" aria-hidden="true"></i>
           <input
             type="text"
             value={currentCity}
@@ -74,11 +72,7 @@ function ProfileEditForm({ onClose, user }) {
           />
         </div>
         <div>
-          <img
-            id="bio-icons"
-            alt=""
-            src="https://static.xx.fbcdn.net/rsrc.php/v3/yX/r/s_ONRClAxbX.png"
-          />
+          <i id="bio-icons" className="fa-solid fa-briefcase" aria-hidden="true"></i>
           <input
             type="text"
             value={workplace}
@@ -87,11 +81,7 @@ function ProfileEditForm({ onClose, user }) {
           />
         </div>
         <div>
-          <img
-            id="bio-icons"
-            alt=""
-            src="https://static.xx.fbcdn.net/rsrc.php/v3/yG/r/H804hWf2rBh.png"
-          />
+          <i id="bio-icons" className="fa-solid fa-graduation-cap" aria-hidden="true"></i>
           <input
             type="text"
             value={school}
@@ -100,11 +90,7 @@ function ProfileEditForm({ onClose, user }) {
           />
         </div>
         <div>
-          <img
-            id="bio-icons"
-            alt=""
-            src="https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/dkccKhK21Su.png"
-          />
+          <i id="bio-icons" className="fa-solid fa-location-dot" aria-hidden="true"></i>
           <input
             type="text"
             value={hometown}
@@ -114,11 +100,7 @@ function ProfileEditForm({ onClose, user }) {
         </div>
 
         <div>
-          <img
-            id="bio-icons"
-            alt=""
-            src="https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/_uvQyqmWMnV.png"
-          />
+          <i id="bio-icons" className="fa-solid fa-volume-high" aria-hidden="true"></i>
           <input
             type="text"
             value={pronunciation}

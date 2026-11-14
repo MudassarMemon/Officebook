@@ -21,12 +21,14 @@ function FriendRequests({ user, users, onClose }) {
 
   return (
     <div className="friend-requests-component-container">
-      <img
+      <i
         onClick={onClose}
         id="close-friend-requests"
-        alt="close-friend-requests"
-        src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/zgulV2zGm8t.png"
-      />
+        className="fa-solid fa-xmark close-icon"
+        role="button"
+        tabIndex={0}
+        aria-label="Close"
+      ></i>
       <ul className="friend-requests-list">
         <h3>Friend Requests</h3>
         {validRequests.map((request) => (

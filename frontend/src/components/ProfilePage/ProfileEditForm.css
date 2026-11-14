@@ -1,4 +1,4 @@
-img#closeEditUser {
+i#closeEditUser {
     border-radius: 50%;
     background-color: #f0f2f5;
     padding: 3px;
@@ -7,12 +7,12 @@ img#closeEditUser {
     right: 10px;
 }
 
-img#closeEditUser:hover {
+i#closeEditUser:hover {
     background-color: #e4e6e8;
     cursor: pointer;
   }
 
-img#closeEditUser:active {
+i#closeEditUser:active {
     background-color: #d8d9dc;
     transform: scale(.9);
 }
@@ -32,9 +32,10 @@ div.edit-user-form div{
 
 }
 
-div.edit-user-form img#bio-icons{
+div.edit-user-form i#bio-icons{
     width: 35px;
-    height: 35px;
+    text-align: center;
+    font-size: 22px;
     margin-left:10px;
     filter: opacity(.5)
 }

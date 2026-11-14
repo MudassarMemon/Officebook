@@ -23,7 +23,7 @@ div.signupButtonContainer > button:hover {
     background-color: #36a420;
 }
 
-img#closeSignUpForm{
+i#closeSignUpForm{
     position:absolute;
     right: 30px;
     top: 15px;

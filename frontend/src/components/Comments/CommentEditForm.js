@@ -16,12 +16,14 @@ function CommentEditForm({ onClose, commentId, commentBody }) {
   return (
     <div className="edit-comment-form">
       <h1>Edit Comment</h1>
-      <img
+      <i
         onClick={onClose}
         id="close-edit-comment"
-        alt="close-edit-comment"
-        src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/zgulV2zGm8t.png"
-      />
+        className="fa-solid fa-xmark close-icon"
+        role="button"
+        tabIndex={0}
+        aria-label="Close"
+      ></i>
       <div className="comment-input">
         <textarea
           className="comment-input"

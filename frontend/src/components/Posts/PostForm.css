@@ -1,4 +1,4 @@
-img#close-create-post {
+i#close-create-post {
     border-radius: 50%;
     background-color: #f0f2f5;
     padding: 3px;
@@ -7,12 +7,12 @@ img#close-create-post {
     right: 10px;
 }
 
-img#close-create-post:hover {
+i#close-create-post:hover {
     background-color: #e4e6e8;
     cursor: pointer;
   }
 
-img#close-create-post:active {
+i#close-create-post:active {
     background-color: #d8d9dc;
     transform: scale(.9);
 }
@@ -114,7 +114,7 @@ img#preview{
     position: relative;
 }
 
-img#remove-post-image{
+i#remove-post-image{
     position: relative;
     bottom: 210px;
     left: 150px;
@@ -125,7 +125,7 @@ img#remove-post-image{
     border: 1px solid rgba(0, 0, 0, 0.251);
 }
 
-img#remove-post-image:hover{
+i#remove-post-image:hover{
     opacity: .8;
     transform: scale(1.05);
 }

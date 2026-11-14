@@ -37,21 +37,6 @@
     transform: scale(.95);
 }
 
-.edit-icon{
-    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/n2RR8_RffR8.png);
-    background-position: 0px -530px;
-    background-size: 26px 1026px;
-    transform: scale(.8);
-    width: 20px;
-    height: 25px;
-    background-repeat: no-repeat;
-    display: inline-block;
-    position: absolute;
-    left: 20px;
-    top: 8px
-  }
-
-
   .edit-user-form {
     background: white;
     border-radius: 8px;

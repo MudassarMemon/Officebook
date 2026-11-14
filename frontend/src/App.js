@@ -5,6 +5,7 @@ import ProfilePage from "./components/ProfilePage";
 import Navigation from "./components/Navigation";
 import Splash from "./components/Splash";
 import MainFeed from "./components/Mainfeed/MainFeed";
+import NotFound from "./components/NotFound";
 
 function App() {
   const sessionUser = useSelector((state) => state.session.user);
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path="/users/:id">
             <ProfilePage />
+          </Route>
+          <Route>
+            <NotFound />
           </Route>
         </Switch>
       </div>

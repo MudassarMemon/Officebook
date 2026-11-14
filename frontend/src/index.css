@@ -24,3 +24,14 @@ body{
 html {
     scrollbar-gutter: stable;
   }
+
+.close-icon {
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #606770;
+  cursor: pointer;
+}
