@@ -34,3 +34,7 @@
 /public
 
 node_modules/
+
+# Ignore environment files, but keep the example template.
+.env*
+!.env.example
