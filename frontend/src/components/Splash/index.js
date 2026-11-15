@@ -31,7 +31,7 @@ function Splash() {
         </div>
       </div>
       <footer>
-        <a href="https://mudassarmemon-3xhow.ondigitalocean.app/" target="_blank" rel="noopener noreferrer">Mudassar Memon</a>
+        <a href="https://mudassarmemonportfolio2026.vercel.app/" target="_blank" rel="noopener noreferrer">Mudassar Memon</a>
         <a
           href="https://www.linkedin.com/in/mudassar-memon-0a48b1125/"
           target="_blank"
