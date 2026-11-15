@@ -14,7 +14,7 @@
 .friends-req-button-container button {
     background: inherit;
     color:#005fc6;
-    padding: 5px;
+    padding: 5px 40px;
     border: none;
     font-family: "Segoe UI Historic","Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 15px;
@@ -26,20 +26,30 @@
 }
 
 .friends-req-button-container p{
-    background-color: rgba(92, 243, 66, 0.2);
-    border-radius: 50%;
+    margin: 0;
     position: absolute;
-    right: -2px;
-    bottom: 10px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    min-width: 20px;
+    height: 20px;
+    padding: 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #bbf7d0;
+    color: #14532d;
+    font-family: "Segoe UI Historic","Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 12px;
     font-weight: bold;
+    pointer-events: none;
 }
 
-.friends-req-button-container p:hover{
-    background-color: rgba(92, 243, 66, 0.2);
-}
-
+.friends-req-button-container p:hover,
 .friends-req-button-container p:active{
-    background-color: rgba(92, 243, 66, 0.2);
+    background-color: #bbf7d0;
+    transform: translateY(-50%);
 }
 
 

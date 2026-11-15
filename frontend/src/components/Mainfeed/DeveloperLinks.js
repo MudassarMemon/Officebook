@@ -4,7 +4,7 @@ function DeveloperLinks() {
   return (
     <div className="developer-links">
       <h2>
-        <i className="fa-solid fa-link fa-2xs"></i>Developer Links
+        <i className="fa-solid fa-link"></i>Developer Links
       </h2>
       <a
         href="https://www.linkedin.com/in/mudassarmemon"
