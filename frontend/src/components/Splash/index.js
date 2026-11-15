@@ -17,7 +17,7 @@ function Splash() {
                 alt="officebook-logo"
               />
               <h2>
-                Built this neat app in 2 weeks with Ruby <span>{rubySvg()}</span> & React <span>{reactSvg()}</span>
+                Built from scratch in 2 weeks with Ruby <span>{rubySvg()}</span> & React <span>{reactSvg()}</span>
               </h2>
             </div>
           </div>

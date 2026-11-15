@@ -32,6 +32,8 @@ img#fbLogo {
   width: 45px;
   height: 40px;
   border-radius: 50%;
+  background-color: #e4e6eb;
+  color: transparent;
 }
 
 div.centerNavBarContainer{
