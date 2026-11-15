@@ -11,6 +11,7 @@ import { getUsers } from "../../store/users";
 import * as sessionActions from "../../store/session";
 import NavBarDropdown from "./NavBarDropdown";
 import NavSearch from "./NavSearch";
+import Avatar from "../Avatar";
 
 function Navigation() {
   const sessionUser = useSelector((state) => state.session.user);
@@ -67,7 +68,7 @@ function Navigation() {
 
       <div className="rightNavBarContainer">
         <nav>
-          <img
+          <Avatar
             id="userLogo"
             alt="userLogo"
             src={users ? users[sessionUser?.id - 1]?.avatarUrl : sessionUser?.avatarUrl}

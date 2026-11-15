@@ -11,6 +11,7 @@ import CommentForm from "../Comments/CommentForm";
 import PostComments from "../Comments/PostComments";
 import ProfilePostEditModal from "./ProfilePostEditModal";
 import PostLikes from "../Likes/PostLikes";
+import Avatar from "../Avatar";
 
 function ProfilePosts({ user }) {
   const sessionUser = useSelector((state) => state.session.user);
@@ -37,11 +38,11 @@ function ProfilePosts({ user }) {
     <div className="profile-posts-container">
       <div className="create-profile-post">
         <Link to={`/users/${sessionUser?.id}`}>
-          <img
+          <Avatar
             id="userIcon"
             alt="userLogo"
             src={users[sessionUser.id - 1]?.avatarUrl}
-          ></img>
+          />
         </Link>
 
         <button
@@ -75,11 +76,11 @@ function ProfilePosts({ user }) {
             <div className="post-author">
               <div className="userIcon">
                 <Link to={`/users/${post.authorId}`}>
-                  <img
+                  <Avatar
                     id="userIcon"
                     alt="userLogo"
                     src={users[post.authorId - 1]?.avatarUrl}
-                  ></img>
+                  />
                 </Link>
               </div>
               <div className="post-author-name">
@@ -133,11 +134,11 @@ function ProfilePosts({ user }) {
             <div className="add-comment">
               <div>
                 <Link to={`/users/${sessionUser?.id}`}>
-                  <img
+                  <Avatar
                     id="userIcon"
                     alt="userLogo"
                     src={users[sessionUser.id - 1]?.avatarUrl}
-                  ></img>
+                  />
                 </Link>
               </div>
               <CommentForm

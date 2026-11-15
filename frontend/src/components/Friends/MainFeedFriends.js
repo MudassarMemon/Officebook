@@ -4,6 +4,7 @@ import { getUsers, fetchUsers } from "../../store/users";
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import FriendRequestModal from "./FriendRequestModal";
+import Avatar from "../Avatar";
 
 function MainFeedFriends({ sessionUser }) {
   const { id } = useParams();
@@ -26,7 +27,7 @@ function MainFeedFriends({ sessionUser }) {
               <div className="mainfeed-friend" key={request.id}>
                 <li>
                   <Link to={`/users/${request.userId}`}>
-                    <img alt="" src={users[request.userId - 1]?.avatarUrl} />
+                    <Avatar alt="" src={users[request.userId - 1]?.avatarUrl} />
                     <h5>
                       {users[request.userId - 1]?.firstName}{" "}
                       {users[request.userId - 1]?.lastName}
@@ -45,7 +46,7 @@ function MainFeedFriends({ sessionUser }) {
               <div className="mainfeed-friend" key={request.id}>
                 <li>
                   <Link to={`/users/${request.friendId}`}>
-                    <img alt="" src={users[request.friendId - 1]?.avatarUrl} />
+                    <Avatar alt="" src={users[request.friendId - 1]?.avatarUrl} />
                     <h5>
                       {users[request.friendId - 1]?.firstName}{" "}
                       {users[request.friendId - 1]?.lastName}

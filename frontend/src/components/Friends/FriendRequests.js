@@ -3,6 +3,7 @@ import { onEnterOrSpace } from "../Util/KeyboardUtil";
 import { Link } from "react-router-dom";
 import { updateFriendship, deleteFriendship } from "../../store/users";
 import { useDispatch } from "react-redux";
+import Avatar from "../Avatar";
 
 function FriendRequests({ user, users, onClose }) {
   const dispatch = useDispatch();
@@ -37,7 +38,7 @@ function FriendRequests({ user, users, onClose }) {
           <li key={request.id}>
             <div className="friend-request">
               <Link to={`/users/${request.userId}`}>
-                <img alt="" id="userIcon" src={users[request.userId - 1]?.avatarUrl} />
+                <Avatar alt="" id="userIcon" src={users[request.userId - 1]?.avatarUrl} />
                 <h5>
                   {users[request.userId - 1]?.firstName}{" "}
                   {users[request.userId - 1]?.lastName}

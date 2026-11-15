@@ -11,6 +11,7 @@ import CommentForm from "../Comments/CommentForm";
 import PostComments from "../Comments/PostComments";
 import PostEditModal from "./PostEditModal";
 import PostLikes from "../Likes/PostLikes";
+import Avatar from "../Avatar";
 
 function MainFeedPosts() {
   const sessionUser = useSelector((state) => state.session.user);
@@ -41,11 +42,11 @@ function MainFeedPosts() {
     <div className="mainfeed-posts-container">
       <div className="create-profile-post">
         <Link to={`/users/${sessionUser?.id}`}>
-          <img
+          <Avatar
             id="userIcon"
             alt="userLogo"
             src={users[sessionUser.id - 1]?.avatarUrl}
-          ></img>
+          />
         </Link>
         <button
           onClick={() => {
@@ -80,11 +81,11 @@ function MainFeedPosts() {
               <div className="post-author">
                 <div>
                   <Link to={`/users/${post.authorId}`}>
-                    <img
+                    <Avatar
                       id="userIcon"
                       alt="userLogo"
                       src={users && users[post.authorId - 1]?.avatarUrl}
-                    ></img>
+                    />
                   </Link>
                 </div>
                 <div className="post-author-name">
@@ -139,11 +140,11 @@ function MainFeedPosts() {
               <div className="add-comment">
                 <div>
                   <Link to={`/users/${sessionUser?.id}`}>
-                    <img
+                    <Avatar
                       id="userIcon"
                       alt="userLogo"
                       src={users[sessionUser.id - 1]?.avatarUrl}
-                    ></img>
+                    />
                   </Link>
                 </div>
                 <CommentForm authorId={sessionUser.id} postId={post.id} />

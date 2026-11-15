@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { getUsers } from "../../store/users";
 import { Link, useHistory } from "react-router-dom";
 import FriendRequestModal from "./FriendRequestModal";
+import Avatar from "../Avatar";
 
 function ProfileFriends({ user }) {
   const sessionUser = useSelector((state) => state.session.user);
@@ -27,7 +28,7 @@ function ProfileFriends({ user }) {
             return (
                 <li className="friend" key={request.id}>
                   <Link to={`/users/${request.userId}`}>
-                    <img alt="" src={users[request.userId - 1]?.avatarUrl} />
+                    <Avatar alt="" src={users[request.userId - 1]?.avatarUrl} />
                     <h5>
                       {users[request.userId - 1]?.firstName}{" "}
                       {users[request.userId - 1]?.lastName}
@@ -45,7 +46,7 @@ function ProfileFriends({ user }) {
             return (
                 <li className="friend" key={request.id}>
                   <Link to={`/users/${request.friendId}`}>
-                    <img alt="" src={users[request.friendId - 1]?.avatarUrl} />
+                    <Avatar alt="" src={users[request.friendId - 1]?.avatarUrl} />
                     <h5>
                       {users[request.friendId - 1]?.firstName}{" "}
                       {users[request.friendId - 1]?.lastName}

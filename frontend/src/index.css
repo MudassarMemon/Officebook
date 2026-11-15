@@ -35,3 +35,8 @@ html {
   color: #606770;
   cursor: pointer;
 }
+
+img.avatar {
+  background-color: #e4e6eb;
+  color: transparent;
+}

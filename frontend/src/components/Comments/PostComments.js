@@ -8,6 +8,7 @@ import { Modal } from "../../context/Modal";
 import { getComment, deleteComment } from "../../store/comments";
 import CommentEditForm from "./CommentEditForm";
 import CommentLikes from "../Likes/CommentLikes";
+import Avatar from "../Avatar";
 
 function PostComments({ users, postId, postAuthor, sessionUser }) {
   const postComments = useSelector(getComment(postId));
@@ -53,7 +54,7 @@ function PostComments({ users, postId, postAuthor, sessionUser }) {
               <>
                 <div className="post-comment" id={comment.id} key={comment?.id}>
                   <Link to={`/users/${comment.authorId}`}>
-                    <img
+                    <Avatar
                       id="userIcon"
                       alt=""
                       src={users && users[comment.authorId - 1]?.avatarUrl}

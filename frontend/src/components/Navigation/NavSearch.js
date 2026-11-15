@@ -5,6 +5,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./NavSearch.css";
+import Avatar from "../Avatar";
 
 function NavSearch() {
   const dispatch = useDispatch();
@@ -44,7 +45,7 @@ function NavSearch() {
             ? searchResults.map((result) => (
                 <li onClick={handleClick(result.id)} key={result.id}>
                   <div>
-                    <img id="userIcon" alt="" src={result?.avatarUrl}></img>
+                    <Avatar id="userIcon" alt="" src={result?.avatarUrl} />
                     <p>
                       {result.firstName} {result.lastName}
                     </p>

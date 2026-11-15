@@ -45,13 +45,15 @@ i#close-friend-requests:active {
 }
 
 div.friend-request {
-    width: 60%;
-     
+    flex: 1;
+    min-width: 0;
 }
 
 .friend-requests-list li {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
     padding: 10px;
     border-radius: 5px;
     background-color: #fff;
@@ -64,27 +66,29 @@ div.friend-request {
     height: 50px;
     object-fit: cover;
     border-radius: 50%;
+    flex-shrink: 0;
 }
 
 .friend-requests-list h5 {
     margin: 0;
     font-size: 18px;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
+    overflow-wrap: anywhere;
 }
 
 .friend-requests-list a {
     text-decoration: none;  
     color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .friend-accept-deny-button {
-    width: 40%;
-    height: 50%;
-     
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
-    align-self: center;
 }
 
 .accept-button, .reject-button {
@@ -93,6 +97,7 @@ div.friend-request {
     border: none;
     cursor: pointer;
     font-size: 16px;
+    height: 36px;
     margin: 0px 3px;
 }
 

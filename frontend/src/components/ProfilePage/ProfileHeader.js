@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import ProfileEditModal from "./ProfileEditModal";
 import FriendModal from "../Friends/FriendModal";
 import { uploadPhoto } from "../../store/users";
+import Avatar from "../Avatar";
 
 function ProfileHeader({ id, user }) {
   const sessionUser = useSelector((state) => state.session.user);
@@ -38,7 +39,7 @@ function ProfileHeader({ id, user }) {
       <div className="profile-details-container">
         <div className="left-profile-details">
           <div className="profile-photo-container">
-            <img alt="userLogo" src={user && user.avatarUrl}></img>
+            <Avatar alt="userLogo" src={user && user.avatarUrl} />
             {user && sessionUser && user.id === sessionUser.id ? (
               <div>
                 <div className="profile-photo-icon">
