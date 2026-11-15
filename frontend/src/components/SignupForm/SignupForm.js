@@ -27,9 +27,9 @@ function SignupFormPage() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [birthMonth, setBirthMonth] = useState(today.getMonth() + 1);
-  const [birthDate, setBirthDate] = useState(today.getDate());
-  const [birthYear, setBirthYear] = useState(today.getFullYear());
+  const [birthMonth, setBirthMonth] = useState(1);
+  const [birthDate, setBirthDate] = useState(1);
+  const [birthYear, setBirthYear] = useState(2000);
   const [gender, setGender] = useState("");
   const [showCustomGenderForm, setShowCustomGenderForm] = useState(false);
 

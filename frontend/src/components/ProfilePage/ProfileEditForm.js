@@ -1,4 +1,5 @@
 import "./ProfileEditForm.css";
+import { onEnterOrSpace } from "../Util/KeyboardUtil";
 import { useState, useEffect, useRef } from "react";
 import { updateUser } from "../../store/users";
 import { useDispatch } from "react-redux";
@@ -44,6 +45,7 @@ function ProfileEditForm({ onClose, user }) {
     <div className="edit-user-form">
       <i
         onClick={onClose}
+        onKeyDown={onEnterOrSpace(onClose)}
         id="closeEditUser"
         className="fa-solid fa-xmark close-icon"
         role="button"
@@ -67,7 +69,7 @@ function ProfileEditForm({ onClose, user }) {
           <input
             type="text"
             value={currentCity}
-            placeholder=""
+            placeholder="City"
             onChange={(e) => setCurrentCity(e.target.value)}
           />
         </div>
@@ -76,7 +78,7 @@ function ProfileEditForm({ onClose, user }) {
           <input
             type="text"
             value={workplace}
-            placeholder=""
+            placeholder="Workplace"
             onChange={(e) => setWorkplace(e.target.value)}
           />
         </div>
@@ -85,7 +87,7 @@ function ProfileEditForm({ onClose, user }) {
           <input
             type="text"
             value={school}
-            placeholder=""
+            placeholder="School"
             onChange={(e) => setSchool(e.target.value)}
           />
         </div>
@@ -94,7 +96,7 @@ function ProfileEditForm({ onClose, user }) {
           <input
             type="text"
             value={hometown}
-            placeholder=""
+            placeholder="Hometown"
             onChange={(e) => setHometown(e.target.value)}
           />
         </div>
@@ -104,7 +106,7 @@ function ProfileEditForm({ onClose, user }) {
           <input
             type="text"
             value={pronunciation}
-            placeholder=""
+            placeholder="Name pronunciation"
             onChange={(e) => setPronunciation(e.target.value)}
           />
         </div>

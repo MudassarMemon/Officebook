@@ -62,6 +62,33 @@ div.create-post-form #post-button {
     cursor: pointer;
 }
 
+div.create-post-form .post-form-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+div.create-post-form .post-form-actions #post-button {
+    flex: 1;
+    margin-top: 0;
+}
+
+div.create-post-form #cancel-post-button {
+    border: none;
+    background-color: #e4e6eb;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #050505;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+div.create-post-form #cancel-post-button:hover {
+    background-color: #d8dadf;
+}
+
 div.create-post-form form{
     display: flex;
     flex-flow: column nowrap

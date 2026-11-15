@@ -1,4 +1,5 @@
 import "./PostForm.css";
+import { onEnterOrSpace } from "../Util/KeyboardUtil";
 import { useState, useEffect, useRef } from "react";
 import { createPost, getPost, updatePost, uploadPost } from "../../store/posts";
 import { useDispatch, useSelector } from "react-redux";
@@ -62,6 +63,7 @@ function PostForm({ onClose, user, postId }) {
     <div className="create-post-form">
       <i
         onClick={onClose}
+        onKeyDown={onEnterOrSpace(onClose)}
         id="close-create-post"
         className="fa-solid fa-xmark close-icon"
         role="button"
@@ -92,6 +94,7 @@ function PostForm({ onClose, user, postId }) {
                 <img alt="" src={photoURL} id="preview" />
                 <i
                   onClick={handleRemovePhoto}
+                  onKeyDown={onEnterOrSpace(handleRemovePhoto)}
                   id="remove-post-image"
                   className="fa-solid fa-xmark close-icon"
                   role="button"
@@ -110,11 +113,18 @@ function PostForm({ onClose, user, postId }) {
             </div>
           </div>
         )}
-        <input
-          id="post-button"
-          type="submit"
-          value={postId ? "Save" : "Post"}
-        />
+        <div className="post-form-actions">
+          {postId && (
+            <button type="button" id="cancel-post-button" onClick={onClose}>
+              Cancel
+            </button>
+          )}
+          <input
+            id="post-button"
+            type="submit"
+            value={postId ? "Save" : "Post"}
+          />
+        </div>
       </form>
     </div>
   );

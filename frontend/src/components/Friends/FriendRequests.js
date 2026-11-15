@@ -1,4 +1,5 @@
 import "./FriendRequests.css";
+import { onEnterOrSpace } from "../Util/KeyboardUtil";
 import { Link } from "react-router-dom";
 import { updateFriendship, deleteFriendship } from "../../store/users";
 import { useDispatch } from "react-redux";
@@ -23,6 +24,7 @@ function FriendRequests({ user, users, onClose }) {
     <div className="friend-requests-component-container">
       <i
         onClick={onClose}
+        onKeyDown={onEnterOrSpace(onClose)}
         id="close-friend-requests"
         className="fa-solid fa-xmark close-icon"
         role="button"

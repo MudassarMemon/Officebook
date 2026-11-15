@@ -59,7 +59,7 @@ function ProfileIntro({ user }) {
         {user.pronunciation ? (
           <div>
             <i className="fa-solid fa-volume-high" aria-hidden="true"></i>
-            {"Pronounces name " + user.pronunciation}
+            {"Name pronunciation: " + user.pronunciation}
           </div>
         ) : null}
       </div>

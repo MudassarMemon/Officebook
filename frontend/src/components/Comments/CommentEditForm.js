@@ -1,4 +1,5 @@
 import "./CommentEditForm.css";
+import { onEnterOrSpace } from "../Util/KeyboardUtil";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
 import { updateComment } from "../../store/comments";
@@ -18,6 +19,7 @@ function CommentEditForm({ onClose, commentId, commentBody }) {
       <h1>Edit Comment</h1>
       <i
         onClick={onClose}
+        onKeyDown={onEnterOrSpace(onClose)}
         id="close-edit-comment"
         className="fa-solid fa-xmark close-icon"
         role="button"

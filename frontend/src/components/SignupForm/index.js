@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import { onEnterOrSpace } from "../Util/KeyboardUtil";
 import { Modal } from "../../context/Modal";
 import SignupForm from "./SignupForm";
 import "./SignupForm.css";
 
 function SignupFormModal() {
   const [showModal, setShowModal] = useState(false);
+
+  const closeSignUp = () => setShowModal(false);
 
   return (
     <>
@@ -20,7 +23,8 @@ function SignupFormModal() {
       {showModal && (
         <Modal>
           <i
-            onClick={() => setShowModal(false)}
+            onClick={closeSignUp}
+            onKeyDown={onEnterOrSpace(closeSignUp)}
             id="closeSignUpForm"
             className="fa-solid fa-xmark close-icon"
             role="button"
