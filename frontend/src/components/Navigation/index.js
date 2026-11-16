@@ -1,5 +1,6 @@
 // styling and icon imports
 import "./Navigation.css";
+import officebookIcon from "../../assets/officebook-icon.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 // functional imports
@@ -36,7 +37,7 @@ function Navigation() {
             <img
               id="fbLogo"
               alt="fbLogo"
-              src="https://facespace-fs-seeds.s3.amazonaws.com/TheOfficeBookIcon4.png"
+              src={officebookIcon}
             ></img>
           </NavLink>
           <NavSearch />

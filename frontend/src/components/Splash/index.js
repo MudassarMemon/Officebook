@@ -4,6 +4,7 @@ import SignupFormModal from "../SignupForm/index";
 import "./Splash.css";
 import { rubySvg ,reactSvg } from "../../assets/splash_logos.js";
 import officebookLogo from "../../assets/officebook-logo.png";
+import officebookIcon from "../../assets/officebook-icon.svg";
 
 function Splash() {
   return (
@@ -44,7 +45,7 @@ function Splash() {
           <i className="fa-brands fa-github"></i> GitHub
         </a>
         <a href="https://github.com/MudassarMemon/Officebook" target="_blank" rel="noopener noreferrer">
-          <img alt="" id="officebook-git-logo" src="https://facespace-fs-seeds.s3.amazonaws.com/TheOfficeBookFavicon.png"/>Officebook Repo
+          <img alt="" id="officebook-git-logo" src={officebookIcon}/>Officebook Repo
         </a>
       </footer>
     </>
