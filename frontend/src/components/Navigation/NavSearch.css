@@ -67,7 +67,7 @@ input#userSearch{
     border: none;
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 14px;
-    padding: 0 10px 2px 30px;
+    padding: 0 10px 2px 40px;
   }
   
   input#userSearch:focus {
@@ -86,7 +86,7 @@ input#userSearch{
     color: rgb(102, 99, 99);
     position: absolute;
     top: 17px;
-    left: 70px;
+    left: 67px;
     background:none;
   }
   
