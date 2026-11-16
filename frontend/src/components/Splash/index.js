@@ -3,6 +3,7 @@ import LoginForm from "../LoginForm/index.js";
 import SignupFormModal from "../SignupForm/index";
 import "./Splash.css";
 import { rubySvg ,reactSvg } from "../../assets/splash_logos.js";
+import officebookLogo from "../../assets/officebook-logo.png";
 
 function Splash() {
   return (
@@ -13,7 +14,7 @@ function Splash() {
             <div className="logo-wrapper">
               <img
                 id="officebook-logo"
-                src="https://facespace-fs-seeds.s3.amazonaws.com/TheOfficeBookLogo.png"
+                src={officebookLogo}
                 alt="officebook-logo"
               />
               <h2>
